@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="A.R.E.S Logo">
+      <h1>A.R.E.S</h1>
+    </div>
+  </header>
+  <main class="success-content">
+    <div class="welcome-box">
+      <p>Hi, <span id="displayFirstName"></span> <span id="displayLastName"></span>!</p>
+      <p>sex: <span id="displaySex"></span></p>
+      <p>email address: <span id="displayEmail"></span></p>
+      <p>You are supporting us because: <span id="displaySupportReason"></span></p>
+    </div>
+    <div class="organization-info">
+      <p>The Association for Rescuing and Empowering Souls (A.R.E.S) is a non-profit organization dedicated to rescuing and empowering individuals who have been affected by trauma, abuse, or neglect. Our goal is to provide a safe and supportive environment for individuals to heal, grow, and thrive. We believe that every person deserves to live a life free from violence, and we are committed to advocating for the rights and well-being of those who have experienced trauma.</p>
+    </div>
+    <div class="tagline">
+      <p>“Saving hearts, sharing smiles”</p>
+    </div>
+  </main>
+  <script>
+   
+    document.getElementById("displayFirstName").textContent = localStorage.getItem("firstName");
+    document.getElementById("displayLastName").textContent = localStorage.getItem("lastName");
+    document.getElementById("displaySex").textContent = localStorage.getItem("sex");
+    document.getElementById("displayEmail").textContent = localStorage.getItem("email");
+    document.getElementById("displaySupportReason").textContent = localStorage.getItem("supportReason");
+  </script>
+</body>
+</html>
