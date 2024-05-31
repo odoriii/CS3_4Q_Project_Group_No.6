@@ -1,14 +1,15 @@
+/* Set the font and background for the body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('signupbgimg.png');
     background-size: cover;
     background-position: center;
   }
-  
+  /* Ensure all elements use border-box for box-sizing */
   *{
     box-sizing: border-box;
   }
-  
+  /* Style for the navigation bar */
   .navbar {
     background-color: #b56464;
     height: 70px;
@@ -21,24 +22,25 @@ body {
     padding: 0 20px;
   }
   
-  
+  /* Style for the logo section within the navbar */
   .logo {
     display: flex;
     align-items: center;
   }
   
-  
+  /* Style for the logo image */
   .logo img {
     height: 50px;
     margin-right: 10px;
   }
   
-  
+  /* Style for the logo text */
   .logo h1 {
     color: white;
     font-size: 24px;
   }
   
+/* Style for the success content section */
   .success-content {
     display: flex;
     justify-content: space-around;
@@ -47,12 +49,14 @@ body {
     padding: 100px 20px;
     box-sizing: border-box;
   }
-  
+
+
+/* Style for the container headings */
   .container h1{
     color: white;
   }
   
-  
+  /* Style for the welcome box */
   .welcome-box {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -60,12 +64,12 @@ body {
     max-width: 300px;
   }
   
-  
+  /* Style for paragraphs within the welcome box */
   .welcome-box p {
     margin: 10px 0;
   }
   
-  
+  /* Style for the organization information section */
   .organization-info {
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -75,7 +79,7 @@ body {
     line-height: 1.6;
   }
   
-  
+  /* Style for the tagline */
   .tagline {
     position: absolute;
     bottom: 30px;
@@ -86,7 +90,7 @@ body {
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
   }
   
-  
+  /* Style for input fields and textarea */
   input[type=text], input[type=password], input[type=email], textarea {
     width: 100%;
     padding: 8px;
@@ -97,19 +101,19 @@ body {
     box-sizing: border-box;
   }
   
-  
+  /* Style for input fields and textarea on focus */
   input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus {
     background-color: #ddd;
     outline: none;
   }
   
-  
+  /* Style for horizontal rule */
   hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 15px;
   }
   
-  
+  /* Style for buttons */
   button {
     background-color: #f9bdc0;
     color: black;
@@ -121,40 +125,43 @@ body {
     width: 100%;
   }
   
-  
+  /* Style for buttons on hover */
   button:hover {
     opacity: 1;
   }
   
-  
+  /* Style for the signup button */
   .signupButton {
     float: left;
     width: 50%;
   }
   
-  
+  /* Style for the container */
   .container {
     padding: 60px;
   }
   
-  
+  /* Clearfix to ensure proper element clearance */
   .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
 
+/* Style for the radio button section */
   .sexR {
     display: flex;
     justify-content: center;
     gap: 10px; /* gap between radios */
     margin: 10px 0; 
   }
-  
+
+/* Style for individual radio buttons */
   .sexR input[type="radio"] {
     margin-right: 5px; /* space between radio button and its label*/
   }
-  
+
+/* Style for labels */
 label {
     color: white; 
   }
