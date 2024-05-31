@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header section with navigation bar and logo -->
   <header class="navbar">
     <div class="logo">
       <img src="logo.png" alt="A.R.E.S Logo">
@@ -15,23 +14,19 @@
     </div>
   </header>
   <main class="success-content">
-     <!-- Welcome box displaying user's information -->
     <div class="welcome-box">
       <p>Hi, <span id="displayFirstName"></span> <span id="displayLastName"></span>!</p>
       <p>sex: <span id="displaySex"></span></p>
       <p>email address: <span id="displayEmail"></span></p>
       <p>You are supporting us because: <span id="displaySupportReason"></span></p>
     </div>
-     <!-- Organization information section -->
     <div class="organization-info">
       <p>The Association for Rescuing and Empowering Souls (A.R.E.S) is a non-profit organization dedicated to rescuing and empowering individuals who have been affected by trauma, abuse, or neglect. Our goal is to provide a safe and supportive environment for individuals to heal, grow, and thrive. We believe that every person deserves to live a life free from violence, and we are committed to advocating for the rights and well-being of those who have experienced trauma.</p>
     </div>
-        <!-- Tagline of the organization -->
     <div class="tagline">
-      <p>“Saving hearts, Sharing Smiles”</p>
+      <p>“Saving hearts, sharing smiles”</p>
     </div>
   </main>
-   <!-- JavaScript to retrieve and display user information from local storage -->
   <script>
    
     document.getElementById("displayFirstName").textContent = localStorage.getItem("firstName");
@@ -42,3 +37,4 @@
   </script>
 </body>
 </html>
+
