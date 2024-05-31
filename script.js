@@ -15,15 +15,7 @@ function textarea_focus() {
         localStorage.setItem("f", f);
     }
 }
-// Function to check if the contact number is valid
-function checkContactNum(){
-    var conNum = document.getElementById("contactNumber").value;
-// Check if the contact number is not a number
-    if(isNaN(conNum)){
-        alert("Please enter a valid contact number"); 
-        return false;
-    }
-}
+
 
 // Function to handle blur event on the textarea
 
@@ -60,7 +52,6 @@ document.getElementById("signupForm").addEventListener("submit", function (event
     event.preventDefault();
 
     // Get the values from the form fields
-    if(checkContactNum()){
     const firstName = document.getElementById("fName").value;
     const lastName = document.getElementById("lName").value;
     const sex = document.querySelector('input[name="sex"]:checked').value;
@@ -73,7 +64,6 @@ document.getElementById("signupForm").addEventListener("submit", function (event
     localStorage.setItem("sex", sex);
     localStorage.setItem("email", email);
     localStorage.setItem("supportReason", supportReason);
-}
 
 
  // Redirect to the success page
