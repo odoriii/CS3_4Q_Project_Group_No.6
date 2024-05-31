@@ -1,77 +1,79 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Header section with navigation bar and logo -->
-    <header class="navbar">
-      <nav>
-        <div class="logo">
-          <img src="logo.png" alt="logo">
-        </div>
-        <div class="pagetitle">
-          <h1><i> A.R.E.S </i></h1>
-      </div>
-      </nav>
-    </header>
-    <main>
-        <!-- Signup form -->
-      <form action="index.html" id="signupForm" onsubmit="return checkContactNum()">
-        <div class="container">
-          <h1> Saving Hearts, Sharing Smiles </h1>
-          <hr>
-    <!-- Name input fields -->
-          <div class="name">
-          <label for="firstName"> First Name </label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="A.R.E.S Logo">
+      <h1>A.R.E.S</h1>
+    </div>
+  </header>
+  <main>
+    <form id="signupForm">
+      <div class="container">
+        <h1>Saving hearts, sharing smiles</h1>
+        <hr>
+
+
+        <div class="name">
+          <label for="firstName">First Name</label>
           <input type="text" name="fName" id="fName" placeholder="First Name" required>
 
-          
-          <label for="lastName"> Last Name </label>
-          <input type="text" placeholder ="Last Name" name="lName" id="lName" required>
-          </div>
- <!-- Gender radio buttons -->
-          <div class="sexR">
-            <input type="radio" id="male" name="sex" value="male" required>
-            <label for="male"> Male </label>
-            
-            <input type="radio" id="female" name="sex" value="female" required>
-            <label for="male"> Female </label>
 
-            <input type="radio" id="preferNotToSay" name="sex" value="preferNotToSay" required>
-          <label for="preferNotToSay">Prefer not to say</label>
-          </div>
-<!-- Email input field -->
-          <div class="emAddress">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Enter Email" required>
-          </div>
-<!-- Password input field -->
-          <div class="pass">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password" required>
-          </div>
- <!-- Contact number input field -->
-          <div class="contact">
-            <label for="contactNumber">Contact Number</label>
-            <input type="text" name="contactNumber" id="contactNumber" placeholder="Enter Contact Number" action="index.html" id="signupForm">
-          </div>
- <!-- Support reason textarea -->
-          <div class="support">
-            <label for="supportReason">Why support this campaign?</label>
-            <textarea rows="4" cols="50" name="sign-in-textarea" class="sign-in-input" id="sign-in-textarea" onfocus="textarea_focus()" onblur="textarea_blur()" required></textarea><br>
-          </div>
-<!-- Submit button -->
-          <div class="submit">
-            <button type="submit" id="signupButton" onclick="page2.html" >Sign Up</button>
-          </div>
+          <label for="lastName">Last Name</label>
+          <input type="text" placeholder="Last Name" name="lName" id="lName" required>
         </div>
-      </form>
-    </main>
-      <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
-  </body>
-  </html>
+
+
+        <div class="sexR">
+          <input type="radio" id="male" name="sex" value="male" required>
+          <label for="male">Male</label>
+
+
+          <input type="radio" id="female" name="sex" value="female" required>
+          <label for="female">Female</label>
+
+
+          <input type="radio" id="preferNotToSay" name="sex" value="preferNotToSay" required>
+          <label for="preferNotToSay">Prefer not to say</label>
+        </div>
+
+
+        <div class="emAddress">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        </div>
+
+
+        <div class="pass">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter Password" required>
+        </div>
+
+
+        <div class="contact">
+          <label for="contactNumber">Contact Number</label>
+          <input type="number" name="contactNumber" id="contactNumber" placeholder="Enter Contact Number">
+        </div>
+
+
+        <div class="support">
+          <label for="supportReason">Why support this campaign?</label>
+          <textarea rows="4" cols="50" name="txt" id="txt" class="area" onfocus="textarea_focus()" onblur="textarea_blur()" required>Why support this campaign?</textarea><br>
+        </div>
+
+
+        <div class="submit">
+          <button type="submit" id="signupButton">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
