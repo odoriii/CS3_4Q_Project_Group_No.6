@@ -14,6 +14,15 @@ function textarea_focus() {
     }
 }
 
+function checkContactNum(){
+    var conNum = document.getElementById("contactNumber").value;
+
+    if(isNaN(conNum)){
+        alert("Please enter a valid contact number"); 
+        return false;
+    }
+}
+
 
 function textarea_blur() {
     var x = document.getElementById("txt");
