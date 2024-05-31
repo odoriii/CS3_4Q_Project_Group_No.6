@@ -8,18 +8,19 @@
 </head>
 <body>
   <header class="navbar">
+     <!-- Navbar with logo and title -->
     <div class="logo">
-      <img src="logo.png" alt="A.R.E.S Logo">
-      <h1>A.R.E.S</h1>
+      <img src="logo.png" alt="A.R.E.S Logo"> <!-- Logo image -->
+      <h1>A.R.E.S</h1> <!-- Website title -->
     </div>
   </header>
   <main>
     <form id="signupForm">
       <div class="container">
-        <h1>Saving hearts, sharing smiles</h1>
-        <hr>
+        <h1>Saving hearts, sharing smiles</h1>  <!-- Form heading -->
+        <hr> <!-- Horizontal rule -->
 
-
+   <!-- Name input fields -->
         <div class="name">
           <label for="firstName">First Name</label>
           <input type="text" name="fName" id="fName" placeholder="First Name" required>
@@ -29,7 +30,7 @@
           <input type="text" placeholder="Last Name" name="lName" id="lName" required>
         </div>
 
-
+   <!-- Gender radio buttons -->
         <div class="sexR">
           <input type="radio" id="male" name="sex" value="male" required>
           <label for="male">Male</label>
@@ -43,31 +44,32 @@
           <label for="preferNotToSay">Prefer not to say</label>
         </div>
 
-
+   <!-- Email input field -->
         <div class="emAddress">
           <label for="email">Email Address</label>
           <input type="email" name="email" id="email" placeholder="Enter Email" required>
         </div>
 
-
+ <!-- Password input field -->
         <div class="pass">
           <label for="password">Password</label>
           <input type="password" name="password" id="password" placeholder="Enter Password" required>
         </div>
 
-
+ <!-- Contact number input field -->
         <div class="contact">
           <label for="contactNumber">Contact Number</label>
           <input type="number" name="contactNumber" id="contactNumber" placeholder="Enter Contact Number">
         </div>
 
+<!-- Support reason textarea -->
 
         <div class="support">
           <label for="supportReason">Why support this campaign?</label>
           <textarea rows="4" cols="50" name="txt" id="txt" class="area" onfocus="textarea_focus()" onblur="textarea_blur()" required>Why support this campaign?</textarea><br>
         </div>
 
-
+    <!-- Submit button -->
         <div class="submit">
           <button type="submit" id="signupButton">Sign Up</button>
         </div>
